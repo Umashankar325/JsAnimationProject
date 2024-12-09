@@ -64,6 +64,7 @@ nav {
   background-color: transparent;
   transition-duration: 0.8s;
   margin-top: 0;
+  cursor: pointer;
 }
 .buttoncontainer button:last-child {
   text-decoration: underline;
@@ -81,7 +82,7 @@ nav {
   display: flex;
   align-items: flex-end;
   padding: 17px 70px;
-  padding-top: 50px;
+  /* padding-top: 50px; */
   padding-top: 120px;
 }
 .hero-section h1 {
@@ -107,6 +108,7 @@ button {
   font-size: 17px;
   margin-top: 30px;
   transition-duration: 0.8s;
+  cursor: pointer;
 }
 button > div {
   background-color: black;
@@ -141,10 +143,17 @@ button:hover > div {
   object-position: center;
   border-radius: 150px;
 }
-.Section2 > p {
-  font-size: 26px;
-  margin-top: 40px;
+
+.section2-paracontainer,
+.section5-paracontainer {
+  padding-top: 40px;
+}
+.section2-paracontainer p,
+.section5-paracontainer p {
+  font-size: 27px;
+
   line-height: 1.1;
+  /* background-color: red; */
 
   font-family: apercu-regular;
 }
@@ -185,6 +194,7 @@ button:hover > div {
 }
 
 .section3-imagecontainer {
+  cursor: pointer;
   margin-top: 20px;
   height: 83vh;
   width: 100%;
@@ -250,6 +260,7 @@ button:hover > div {
   height: 580px;
 }
 .Section4 > .left .section4-imagecontainer {
+  cursor: pointer;
   width: 100%;
   height: 400px;
   background-image: url("https://cdn.prod.website-files.com/648884be5f32a12e5da2392f/64cac65e2bf6eb87608fe500_GC_Flyers-Nan-min-p-2000.jpg");
@@ -277,6 +288,7 @@ button:hover > div {
   opacity: 1;
 }
 .Section4 > .right .section4-imagecontainer {
+  cursor: pointer;
   background-image: url("https://cdn.prod.website-files.com/648884be5f32a12e5da2392f/64bbb716dc15a767d726cdea_DM_header-p-2000.jpg");
   width: 100%;
   height: 80%;
@@ -345,6 +357,7 @@ button:hover > div {
   width: 330px;
   border-radius: 25px;
   overflow: hidden;
+  cursor: pointer;
 }
 .Section5-card > .img {
   width: 100%;
@@ -409,10 +422,8 @@ button:hover > div {
 .Section5-cardcontainer .card4 .contant {
   background-color: #fa8a58;
 }
-.Section5 > p {
+.section5-paracontainer {
   padding: 0px 70px;
-  font-family: apercu-regular;
-  font-size: 25px;
 }
 
 .Section5-card:hover .img {
@@ -428,6 +439,158 @@ button:hover > div {
 
 .Section6 {
   width: 100%;
-  height: 100vh;
-  background-color: green;
+  min-height: 100vh;
+  background-color: #f4f4f1;
+  padding-top: 100px;
+}
+
+.Section6 h1 {
+  font-size: 133px;
+  font-weight: 900;
+  font-family: Siaga;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+}
+.Section6 svg {
+  /* width: 50px; */
+  height: 125px;
+  background-color: #20cc84;
+  padding: 30px;
+  border-radius: 50%;
+  position: absolute;
+  animation: rotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.Section6 .imgcontainer {
+  width: 90vw;
+  height: 130vh;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+.Section6 .imgcontainer img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.Section7 {
+  width: 100%;
+  min-height: 50vh;
+  background-color: #f4f4f1;
+  padding: 70px;
+  padding-top: 210px;
+  font-family: Siaga;
+  font-size: 17px;
+}
+.Section7 .line {
+  background-color: black;
+  height: 1px;
+  width: 100%;
+}
+.listcontainer {
+  width: 100%;
+  min-height: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+.listcontainer ul {
+  list-style: none;
+}
+.listcontainer ul li {
+  font-family: Siaga;
+  margin-top: 10px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #a3a4a7;
+}
+.logo {
+  height: 200px;
+  width: 100%;
+}
+.logo img {
+  height: 200px;
+  position: absolute;
+  animation: rotate;
+  right: 60px;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transition-duration: 0.5s;
+}
+.logo img:hover {
+  height: 210px;
+}
+.bottom {
+  width: 100%;
+  height: 80vh;
+
+  background-color: black;
+  color: white;
+}
+
+.bottomtop {
+  width: 100%;
+  height: 55%;
+
+  padding: 0px 70px;
+  display: flex;
+}
+.bottomtopleft {
+  width: 70%;
+  height: 100%;
+  padding-top: 60px;
+}
+.bottomtopleft h2 {
+  font-size: 50px;
+  font-weight: 800;
+  font-family: fontb;
+  color: white;
+}
+.bottomtopleft button {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+.bottomtopleft button div {
+  background-color: white;
+}
+.bottomtopright {
+  width: 30%;
+  height: 100%;
+  padding-top: 60px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.bottomtopright ul {
+  list-style: none;
+}
+
+.bottomtopright ul li {
+  font-family: fontb;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid black;
+  width: fit-content;
+}
+.bottomtopright ul li:hover {
+  border-bottom: 1px solid white;
+}
+.bottomtopright ul li:first-child {
+  font-family: fonta;
+  font-size: 18px;
+}
+.bottombottom {
+  width: 100%;
+  height: 45%;
+}
+.bottombottom img {
+  width: 100%;
+  object-fit: cover;
 }
